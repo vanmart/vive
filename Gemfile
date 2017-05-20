@@ -40,8 +40,11 @@ gem 'figaro'
 
 # Bootstrap 4 integration
 gem 'bootstrap', '~> 4.0.0.alpha6'
-# Extras
+# Bootstrap generator
 gem 'bootstrap-sass-extras'
+
+# User authentication
+gem 'devise'
 
 
 group :development, :test do
