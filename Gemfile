@@ -47,10 +47,17 @@ gem 'bootstrap-sass-extras'
 gem 'devise'
 # Styled devise views using bootstrap
 gem 'devise-bootstrap-views'
-
 #Pretty alerts
 gem 'toastr-rails'
 
+# Dashboard - administration site
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
+
+# User permisions
+gem 'cancancan'
+# Many roles for user
+gem 'rolify'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
