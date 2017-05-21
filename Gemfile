@@ -45,6 +45,11 @@ gem 'bootstrap-sass-extras'
 
 # User authentication
 gem 'devise'
+# Styled devise views using bootstrap
+gem 'devise-bootstrap-views'
+
+#Pretty alerts
+gem 'toastr-rails'
 
 
 group :development, :test do
