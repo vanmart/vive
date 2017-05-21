@@ -45,6 +45,8 @@ gem 'bootstrap-sass-extras'
 
 # User authentication
 gem 'devise'
+# Styled devise views using bootstrap
+gem 'devise-bootstrap-views'
 
 
 group :development, :test do
