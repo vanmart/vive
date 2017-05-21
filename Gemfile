@@ -38,6 +38,10 @@ gem 'jbuilder', '~> 2.5'
 #Manage the application.yml file
 gem 'figaro'
 
+# Required by Bootstrap
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 # Bootstrap 4 integration
 gem 'bootstrap', '~> 4.0.0.alpha6'
 # Bootstrap generator
