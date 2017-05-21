@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
 
   mount RailsAdmin::Engine => '/dashboard', as: 'rails_admin'
-  devise_for :users
+
   root to: "basic_pages#welcome"
 
   get 'basic_pages/welcome'
