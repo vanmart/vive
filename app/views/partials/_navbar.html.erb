@@ -12,18 +12,16 @@
       <form class="form-inline my-2 my-lg-0">
         <% if user_signed_in? %>
           <% if current_user.has_role? :MasterAdmin %>
-            <%= link_to rails_admin_path, class: 'btn btn-outline-success my-2 my-sm-0' do %>Go to Dashboad<% end %>
+            <%= link_to rails_admin_path, class: 'btn btn-outline-info my-2 my-sm-0 margin_button' do %>Go to Dashboad<% end %>
           <% end %>
           <% if current_user.has_role? :Admin %>
-            <%= link_to rails_admin_path, class: 'btn btn-outline-success my-2 my-sm-0' do %>Go to Dashboad<% end %>
+            <%= link_to rails_admin_path, class: 'btn btn-outline-success my-2 my-sm-0 margin_button' do %>Go to Dashboad<% end %>
           <% end %>
-
-
-          <%= link_to('Edit registration', edit_user_registration_path, class: 'btn btn-outline-success my-2 my-sm-0') %>
-          <%= link_to('Logout', destroy_user_session_path, class: 'btn btn-outline-success my-2 my-sm-0', :method => :delete) %>
+          <%= link_to('Edit registration', edit_user_registration_path, class: 'btn btn-outline-info my-2 my-sm-0 margin_button') %>
+          <%= link_to('Logout', destroy_user_session_path, class: 'btn btn-outline-danger my-2 my-sm-0 margin_button', :method => :delete) %>
         <% else %>
-          <%= link_to('Register', new_user_registration_path, class: 'btn btn-outline-success my-2 my-sm-0')  %>
-          <%= link_to('Login', new_user_session_path, class: 'btn btn-outline-success my-2 my-sm-0')  %>
+          <%= link_to('Register', new_user_registration_path, class: 'btn btn-outline-success my-2 my-sm-0 margin_button')  %>
+          <%= link_to('Login', new_user_session_path, class: 'btn btn-outline-success my-2 my-sm-0 margin_button')  %>
         <% end %>
       </form>
   </div>
