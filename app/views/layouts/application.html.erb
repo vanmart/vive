@@ -43,7 +43,16 @@
     <div class="container-fluid" style="margin-top: 65px">
       <div class="row">
         <div class="col-md-12">
+          <% unless flash.empty? %>
+              <script type="text/javascript">
+                <% flash.each do |f| %>
+                  <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+                  toastr['<%= type %>']('<%= f[1] %>');
+              <% end %>
+            </script>
+          <% end %>
           <%= bootstrap_flash %>
+
           <%= yield %>
         </div>
       </div><!--/row-->
